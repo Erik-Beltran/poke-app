@@ -1,0 +1,45 @@
+.modalInfo {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+}
+
+.modalContent {
+  width: auto;
+  background: white;
+  margin: auto;
+}
+
+.modal-body {
+  display: flex;
+}
+
+.modal-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modal-texts p {
+  text-align: left;
+}
+
+/* ---------------PANTALLA DE PHONES (EXTRA SMALL)------------  */
+@media (max-width: 767px) {
+  .modal-body {
+    flex-direction: column;
+  }
+  .modal-img img {
+    width: 200px;
+    margin-bottom: 1em;
+  }
+  .modalContent {
+    width: 90%;
+  }
+  .modal-texts p {
+    margin: 0.25em;
+  }
+}
